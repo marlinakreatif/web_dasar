@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cara Menggunakan Teks Terformat</title>
+  </head>
+  <body>
+    <h1>Cara Menggunakan Teks Terformat</h1>
+    <hr />
+    <p>
+      Sejauh ini, kita sudah mengenal paragraf, heading dan juga list pada HTML.
+      Tapi masih ada beberapa lagi yang merupakan spesial teks format yang dapat
+      kita gunakan yaitu &lt;blockqoute&gt;, &lt;pre&gt;, dan &lt;figure&gt;.
+    </p>
+    <hr />
+    <h4>Long quotations</h4>
+    <p>
+      Jika pada konten kita memiliki sebuah kutipan ataupun sebuah testimonial,
+      kita dapat gunakan format long quotations dengan menggunakan tags
+      <u>blockquote</u>, <b>Contoh : </b>
+    </p>
+
+    <blockquote>
+      <p>
+        Situs web (bahasa Inggris: website) adalah sekumpulan halaman web yang
+        saling berhubungan yang umumnya berada pada peladen yang sama berisikan
+        kumpulan informasi yang disediakan secara perorangan, kelompok, atau
+        organisasi.
+      </p>
+    </blockquote>
+
+    <p>
+      Pada elemen ini kita dapat menggunakan atribut <i>cite</i> untuk
+      menentukan sumber URL dari sebuah kutipan (Jika kutipan tersebut bersumber
+      dari sebuah situs website).
+    </p>
+
+    <blockquote cite="https://id.wikipedia.org/wiki/Situs_web">
+      <p>
+        Situs web (bahasa Inggris: website) adalah sekumpulan halaman web yang
+        saling berhubungan yang umumnya berada pada peladen yang sama berisikan
+        kumpulan informasi yang disediakan secara perorangan, kelompok, atau
+        organisasi.
+      </p>
+    </blockquote>
+
+    <h4>Performated Text</h4>
+    <p>
+      Pada modul sebelumnya, kita sudah mengetahui bahwa HTML akan mengabaikan
+      penulisan spasi yang dituliskan secara berulang dan juga line breaks
+      (baris baru). Tetapi pada beberapa tipe konten seperti contoh kode atau
+      puisi hal tersebut sangat berarti. Dengan begitu, terdapat sebuah elemen
+      yang dapat kita gunakan untuk menampilkan konten sesuai yang kita tulis
+      pada text editor. <b>Contoh :</b>
+    </p>
+
+    <pre>
+        SAJAK PUTIH
+ 
+        Bersandar pada tari warna pelangi
+        Kau depanku bertudung sutra senja
+        Di hitam matamu kembang mawar dan melati
+        Harum rambutmu mengalun bergelut senda
+         
+        Sepi menyanyi, malam dalam mendoa tiba
+        Meriak muka air kolam jiwa
+        Dan dalam dadaku memerdu lagu
+        Menarik menari seluruh aku
+         
+        Hidup dari hidupku, pintu terbuka
+        Selama matamu bagiku menengadah
+        Selama kau darah mengalir dari luka
+        Antara kita Mati datang tidak membelah...
+         
+                           Karya : Chairil Anwar
+        
+    </pre>
+
+    <h4>Figure</h4>
+    <p>
+      Elemen ini digunakan untuk merepresentasikan konten tersendiri
+      (self-contained content) seperti ilustrasi, diagram, foto atau bisa juga
+      sebuah baris kode. Banyak hal yang dapat digunakan dalam elemen ini.
+    </p>
+    <figure>
+      <img
+        src="./assets/image/bosscha.jpg"
+        alt="dicoding"
+        width="200px"
+        height="auto"
+      />
+      <figcaption>Dicoding</figcaption>
+    </figure>
+    <p>
+      Elemen ini digunakan untuk mengkelompokkan blok konten yang dapat
+      dipindahkan posisinya dari blok utama sebuah dokumen tanpa mempengaruhi
+      arti dari induk dokumen.
+    </p>
+  </body>
+</html>
