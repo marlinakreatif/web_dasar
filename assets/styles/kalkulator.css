@@ -56,3 +56,15 @@ body {
   border-radius: 5px;
   margin-top: 10px;
 }
+
+@media screen and (max-width: 1000px) {
+  .flex-container-column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 513px) {
+  .button {
+    padding: 10px;
+  }
+}
