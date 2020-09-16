@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cara Menggunakan FlexBox</title>
+    <style>
+      .container {
+        display: flex;
+
+        /* properti lainnya */
+        width: 800px;
+        height: 250px;
+        background-color: aqua;
+        border: 1px solid black;
+        padding: 20px;
+        border-radius: 15px;
+        margin: 0 auto;
+      }
+      .box {
+        /* property lainnya */
+        background: gold;
+        margin: 5px;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      .grow-1 {
+        flex-grow: 1;
+      }
+      .grow-2 {
+        flex-grow: 2;
+      }
+      .grow-3 {
+        flex-grow: 3;
+      }
+
+      .flex-column {
+        flex-direction: column;
+      }
+
+      .flex-row {
+        display: flex;
+        flex-direction: row;
+        background: palevioletred;
+        margin: 5px;
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- how to use flex and flex-grow -->
+    <div class="container">
+      <div class="box grow-1"></div>
+      <div class="box grow-2"></div>
+      <div class="box grow-1"></div>
+    </div>
+    <h3>how to use flex-direction</h3>
+    <div class="container flex-column">
+      <div class="flex-row grow-1">
+        <div class="box grow-1">Item Ke-1</div>
+        <div class="box grow-2">Item Ke-2</div>
+        <div class="box grow-3">Item Ke-3</div>
+      </div>
+      <div class="flex-row grow-1">
+        <div class="box grow-1">Item Ke-1</div>
+        <div class="box grow-2">Item Ke-2</div>
+        <div class="box grow-3">Item Ke-3</div>
+      </div>
+    </div>
+  </body>
+</html>
