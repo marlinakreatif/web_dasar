@@ -22,13 +22,20 @@ nav a {
   font-size: 18px;
   font-weight: 400;
   text-decoration: none;
+  color: white;
 }
 nav a:hover {
   font-weight: bold;
 }
 
+nav{
+    padding: 5px;
+    background-color: #00a2c6;
+}
 nav li {
   display: inline;
+  list-style-type: none;
+  margin: 20px;
 }
 
 .profile header {
@@ -51,4 +58,12 @@ nav li {
   border-radius: 5px;
   padding: 20px;
   margin-top: 20px;
+}
+
+.jumbotron {
+  font-size: 20x;
+  padding: 60px;
+  background-color: #00c8eb;
+  text-align: center;
+  color: white;
 }
