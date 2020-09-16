@@ -56,7 +56,16 @@ function performeCalculation() {
     result =
       parseInt(calculator.firstNumber) - parseInt(calculator.displayNumber);
   }
+  const historyItem = {
+    firstNumber: calculator.firstNumber,
+    operators: calculator.operators,
+    secondNumber: calculator.displayNumber,
+    result: result,
+  };
+
+  putHistory(historyItem);
   calculator.displayNumber = result;
+  renderHistory();
 }
 const buttons = document.querySelectorAll(".button");
 for (let btn of buttons) {
