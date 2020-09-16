@@ -40,6 +40,8 @@ nav a:hover {
 nav {
   padding: 5px;
   background-color: #00a2c6;
+  position: sticky;
+  top: 0;
 }
 nav li {
   display: inline;
